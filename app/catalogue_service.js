@@ -60,6 +60,7 @@ function countBooksByAuthor(author) {
   return count;
 };
 
+
 function checkBookByTitle(title) {
   // We will loop through the catalogue, searching for a title
   for (i = 0; i < catalogue.length; i++) {
