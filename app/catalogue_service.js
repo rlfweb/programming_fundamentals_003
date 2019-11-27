@@ -67,16 +67,19 @@ function checkBookByTitle(title) {
     // If the title exists, we will return true and stop looking
     if (catalogue[i].title == title) {
     }
+  }
 
-}
 return true;
 
-// We will need to ensure the entire catalogue is checked (looped through)
-// If the title does not exist, return false
 
- 
-  return false
+// We will need to ensure the entire catalogue is looped through
+// If the title does not exist, return false
+ else  {
+  return false;
+ }
 };
+
+
 
 function countBooksByFirstLetter(letter) {
     // so we want a loop that will go through the object from beginning to end
@@ -94,15 +97,28 @@ function countBooksByFirstLetter(letter) {
 
 
 function getQuantity(title) {
-  // Your code here
+  //psuedocode first
+  // we want to loop through until we find the particular title
+  // then we want to return the quantity availalbe of that title
+  // we don't then need to check the rest of the array, it's fine to be booted out once we have found the title we wanted
+  
 }
 
 function getBooksByAuthor(author) {
-  // Your code here
+  // pseudocode first
+  // we want to loop through the entire array
+  // each time we find a book by a particular author, we need to capture the data relating to that book
+  // we want to return a new array that contains only book title,author,quantity by that particular author 
 }
 
 function checkQuantity(title, quantity) {
-  // Your code here
+  // pseudocode first
+  // this is a pretty standard stock check function
+  // so would need to loop through the array for a particular title. 
+  // When find it, return the quantity of books that are in stock
+  // would be okay to be booted out of the loop once we've found that title, because in our catalogue
+  // there are no repeats. But maybe better to write it to check through whole catalogue because
+  // perhaps books could be entered more than once in different editions etc. 
 }
 
 module.exports = {

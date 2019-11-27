@@ -186,6 +186,12 @@ Begin by writing a test, as always, before implementing the function.
 
 1. If a book is an object, what is its encapsulated data?
 
+// All the data that we can think of relating to books, such as title, author, publishing date, isbn, no of pages, publisher etc. 
+
 2. What data, of a book's encapsulated data, might be changeable?
 
+// there might be different editions, which have different covers, number of pages, publisher, translated into different languages maybe
+
 3. Why is representing a book as an object a better idea than representing it as a string?
+
+// Because we can separate the data into different types and pull certain parts of that out, to analyse it. For example, we can search then just for date and get all the books published in a certain year. Whereas if the date was in a string, it wouldn't be searchable in the same way. 

@@ -10,20 +10,16 @@ describe("catalogueService", () => {
   });
 });
 
+describe("catalogueService", () => {
   describe("catalogueService.checkBookByTitle", () => {
+
     test("returns true if the book exists", () => {
-      expect(
-        catalogueService.checkBookByTitle(
-          "The Assassination of Margaret Thatcher"
-        )
-      ).toBe(true);
+      expect(catalogueService.checkBookByTitle("The Assassination of Margaret Thatcher")).toBe(true);
     });
+
     test("returns false if the book does not exist", () => {
-      expect(
-        catalogueService.checkBookByTitle(
-          "Moby Dick"
-        )
-      ).toBe(false);
+      expect(catalogueService.checkBookByTitle("Moby Dick")).toBe(false);
     });
   });
+});
 
