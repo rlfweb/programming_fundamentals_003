@@ -92,18 +92,22 @@ function countBooksByFirstLetter(letter) {
 
 function getQuantity(title) {
   //psuedocode first
-  // we want to loop through until we find the particular title
+  // we want to loop through whole catalogue, starting at the beginning and checking one at a time, until we find the particular title
+  for (let i = 0; i < catalogue.length; i++) {
   // then we want to return the quantity of book available of that title
   // we don't then need to check the rest of the array, it's fine to be booted out once we have found the title we wanted
 }
+};
 
 function getBooksByAuthor(author) {
   // we want to get all the data that relates to all the books in the catalogue that are written by one particular author
   // pseudocode first
   // we want to loop through the entire array
+  for (let i = 0; i < catalogue.length; i++) {
   // each time we find a book by a particular author, we need to capture the data relating to that book
   // we want to return a new array that contains each book title,author,quantity by that particular author 
-}
+  }
+};
 
 
 function checkQuantity(title, quantity) {
@@ -112,11 +116,13 @@ function checkQuantity(title, quantity) {
   // so checking "By Night in Chile" has quantity 8 copies would return true
   // any other quantity for "By Night in Chile" would return false 
   // Need to loop through the array for that particular title. 
+  for (let i = 0; i < catalogue.length; i++) {
   // When find it, check the quantity. 
   // would be okay to be booted out of the loop once we've found that title, because in our catalogue
   // there are no repeats. But maybe better to write it to check through whole catalogue because
   // perhaps books could be entered more than once in different editions etc. 
-}
+  }
+};
 
 
 
